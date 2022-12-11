@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/loginModule?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jwt:
+    secretKey: JJWCJHLCGCBG13245
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
