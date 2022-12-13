@@ -1,11 +1,11 @@
 package com.spring.loginmodule.dto.user.req;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 @Getter
+@Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class ReqJoinDto {
 

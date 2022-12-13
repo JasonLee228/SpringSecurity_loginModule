@@ -26,7 +26,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    private static final String[] whitelist = {"/", "/api/join", "/api/join/email", "/api/login"}; // 동작 안함
+    private static final String[] whitelist = {"/", "/api/user/join", "/api/user/login"};
 
     private final TokenUtil tokenService;
 

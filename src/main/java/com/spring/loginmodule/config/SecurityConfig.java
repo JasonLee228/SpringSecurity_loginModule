@@ -39,9 +39,10 @@ public class SecurityConfig {
                 .and()
                 .httpBasic().disable()
                 .formLogin().disable()
+
                 .authorizeHttpRequests()
-                .requestMatchers("/api/join").permitAll()
-                .requestMatchers("/api/login").permitAll()
+                .requestMatchers("/api/user/join").permitAll()
+                .requestMatchers("/api/user/login").permitAll()
                 .requestMatchers("/api/user/**").hasAuthority("USER")
                 .anyRequest().permitAll()
 //                .antMatchers("/api/login").permitAll()
